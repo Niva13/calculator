@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         this.upper.setText("");
 
         this.down = findViewById(R.id.textView);
-        this.down.setText("");
+        this.down.setText(" ");
 
     }
 
