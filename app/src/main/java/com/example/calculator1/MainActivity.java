@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (this.chAction == '/') {
             if (this.num2 != 0) {
-                if (!(down.getText().toString().equals("ERROR")))
+                if (!(down.getText().toString().equals("ERRORR")))
                 {
                     this.resultNumfloat = this.num1 / this.num2;
                     this.num1 = this.resultNumfloat;
