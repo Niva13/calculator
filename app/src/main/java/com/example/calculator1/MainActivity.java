@@ -84,14 +84,17 @@ public class MainActivity extends AppCompatActivity {
 
         if (this.chAction == '/') {
             if (this.num2 != 0) {
-                if (!(down.getText().toString().equals("ERROR"))) {
+                if (!(down.getText().toString().equals("ERROR")))
+                {
                     this.resultNumfloat = this.num1 / this.num2;
+                    this.num1 = this.resultNumfloat;
                     this.down.setText(Float.toString(this.resultNumfloat));
 
                     if (this.resultNumfloat % 1 == 0) {
                         this.numInt = (int) this.resultNumfloat;
                         this.down.setText(Integer.toString(this.numInt));
                     } else {
+                        this.numInt = (int) this.resultNumfloat;
                         this.down.setText(Float.toString(this.resultNumfloat));
                     }
                 } else {
